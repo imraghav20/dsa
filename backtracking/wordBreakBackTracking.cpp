@@ -8,6 +8,26 @@ bool lookup(string word, vector<string> &dictionary){
         }
     }
     return false;
+
+}
+
+
+int addTwoNumber(int A, int B)
+{
+    // When A is positive
+    while (A > 0) {
+        A--;
+        B++;
+    }
+ 
+    // When A is negative
+    while (A < 0) {
+        A++;
+        B--;
+    }
+ 
+    // Return sum of A and B
+    return B;
 }
 
 void helper(string str, vector<string> &dictionary, int i, string current, int& count){
