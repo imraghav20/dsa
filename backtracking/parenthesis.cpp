@@ -40,6 +40,15 @@ return a*b;
 }
 int main(){
     generateParenthesis(4);
+
+}
+int main()
+{
+    int n = 8458;
+    int m = 8732;
+    cout << xSum(n, m);
+
     solve(2,3);
+
     return 0;
 }

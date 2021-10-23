@@ -27,8 +27,20 @@ void helper(string str, int i, string current){
         helper(str, i+1, current+letters[i]);
     }
 }
-vector<string> letterCombinations(string digits) {
+vector<strinletterCombinations(string digits) {
         if(digits.size() != 0){
             
         }
     }
+
+
+int* getCharCountArray(char* str)
+{
+    int* count = (int*)calloc(sizeof(int), NO_OF_CHARS);
+    int i;
+    for (i = 0; *(str + i); i++)
+        count[*(str + i)]++;
+    return count;
+}
+
+
