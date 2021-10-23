@@ -1,6 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+bool comp( int& a, int& b){
+    return a < b;
+}
+
+void swap( int& a, int& b){
+        int temp = b;
+        b = a;
+        a = temp;
+}
+
+
+
 void helper(vector<int> nums,int n, int i, vector<int> sub, set<vector<int>> &res){
     if(i==n){
         sort(sub.begin(), sub.end());
