@@ -6,6 +6,16 @@ map<char, string> m = {
         {'5', "jkl"}, {'6', "mno"}, {'7', "pqrs"},
         {'8', "tuv"}, {'9', "wxyz"}
     };
+
+int ilove(int n){
+
+        vector<int>ans;
+        for(int i=0;i<n;i++){
+        ans.push_back(i);
+        }
+        return ans[0];
+
+}
 vector<string> result;
 void helper(string str, int i, string current){
     if(i==str.size()){
