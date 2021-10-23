@@ -1,5 +1,14 @@
 #include <bits/stdc++.h>
+
+#define max 1000
+
 using namespace std;
+
+bool comp(int a, int b){
+    if(a==b) return true;
+    return false;
+}
+
 
 void helper(vector<int> nums,int n, int i, vector<int> sub, set<vector<int>> &res){
     if(i==n){
@@ -23,6 +32,7 @@ vector<vector<int>> uniqueSubsets(vector<int> nums){
         r.push_back(x);
     }
     return r;
+    
 }
 int main(){
     vector<int> in = {1,3,4,3};
