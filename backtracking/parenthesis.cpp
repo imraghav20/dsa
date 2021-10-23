@@ -20,3 +20,10 @@ vector<string> generateParenthesis(int n) {
 int main(){
     generateParenthesis(4);
 }
+int main()
+{
+    int n = 8458;
+    int m = 8732;
+    cout << xSum(n, m);
+    return 0;
+}
