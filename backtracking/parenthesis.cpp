@@ -23,6 +23,13 @@ void recur(int n, int i, string current){
 vector<string> generateParenthesis(int n) {
     recur(n,0,"");
 }
+
+int solve(int a,int b)
+{
+return a*b;
+}
 int main(){
     generateParenthesis(4);
+    solve(2,3);
+    return 0;
 }
