@@ -6,7 +6,7 @@
 
 typedef long long ll;
 
-#define sqr(a) a*a
+
 #define big2(a, b) (a>b)?a:b
 #define sml2(a, b) (a>b)?b:a
 #define big3(a, b, c) (((a>b)?a:b)>c)?((a>b)?a:b):c
@@ -16,6 +16,8 @@ using namespace std;
 
 int main()
 {
+   cin.tie(NULL);
+   ios_base::sync_with_stdio(false);
    vector<int> v;
    stack<int> s;
    int n, ctr=0, ctr2=0, m=0, m2=0, pos1, pos2;
