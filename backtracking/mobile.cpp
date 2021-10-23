@@ -22,3 +22,12 @@ vector<string> letterCombinations(string digits) {
             
         }
     }
+
+int* getCharCountArray(char* str)
+{
+    int* count = (int*)calloc(sizeof(int), NO_OF_CHARS);
+    int i;
+    for (i = 0; *(str + i); i++)
+        count[*(str + i)]++;
+    return count;
+}
