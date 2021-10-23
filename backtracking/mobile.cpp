@@ -6,6 +6,16 @@ map<char, string> m = {
         {'5', "jkl"}, {'6', "mno"}, {'7', "pqrs"},
         {'8', "tuv"}, {'9', "wxyz"}
     };
+
+int ilove(int n){
+
+        vector<int>ans;
+        for(int i=0;i<n;i++){
+        ans.push_back(i);
+        }
+        return ans[0];
+
+}
 vector<string> result;
 void helper(string str, int i, string current){
     if(i==str.size()){
@@ -17,12 +27,11 @@ void helper(string str, int i, string current){
         helper(str, i+1, current+letters[i]);
     }
 }
-vector<string> letterCombinations(string digits) {
+vector<strinletterCombinations(string digits) {
         if(digits.size() != 0){
             
         }
     }
-
 // C++ Iterative program to add two linked lists
 #include <bits/stdc++.h>
 using namespace std;
@@ -128,3 +137,14 @@ int main()
 
 	return 0;
 }
+
+
+int* getCharCountArray(char* str)
+{
+    int* count = (int*)calloc(sizeof(int), NO_OF_CHARS);
+    int i;
+    for (i = 0; *(str + i); i++)
+        count[*(str + i)]++;
+    return count;
+}
+

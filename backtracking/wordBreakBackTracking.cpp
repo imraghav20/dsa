@@ -8,8 +8,39 @@ bool lookup(string word, vector<string> &dictionary){
         }
     }
     return false;
+
 }
 
+
+int addTwoNumber(int A, int B)
+{
+    // When A is positive
+    while (A > 0) {
+        A--;
+        B++;
+    }
+ 
+    // When A is negative
+    while (A < 0) {
+        A++;
+        B--;
+    }
+ 
+    // Return sum of A and B
+    return B;
+}
+
+// C++ program to add two number
+// using addition operator
+
+// Function to return sum
+// of two number
+int addTwoNumber(int A, int B)
+{
+    // Return sum of A and B
+    return A + B;
+}
+ 
 void helper(string str, vector<string> &dictionary, int i, string current, int& count){
     int n = str.size();
     for (int i = 1; i<=n; i++){ //from 1 to n because to create substring we take size as second parameter
