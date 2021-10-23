@@ -8,6 +8,16 @@ typedef long long ll;
 
 using namespace std;
 
+void swap( int& a, int& b){
+        int temp = b;
+        b = a;
+        a = temp;
+    }
+
+void add_edge( vector < vector <int> >& adj, int a, int b){
+  adj[a].push_back(b);
+  adj[b].push_back(a);
+}
 
 
 void recur(int n, int i, string current){
