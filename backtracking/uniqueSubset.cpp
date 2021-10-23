@@ -4,6 +4,18 @@
 
 using namespace std;
 
+
+bool comp( int& a, int& b){
+    return a < b;
+}
+
+void swap( int& a, int& b){
+        int temp = b;
+        b = a;
+        a = temp;
+}
+
+
 bool comp(int a, int b){
     if(a==b) return true;
     return false;

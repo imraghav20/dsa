@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+typdef long long ll
+
+
+
 void recur(vector<vector<char>> board, string word,int i, int j, int l, bool &flag){
     if(l==word.size()){
         flag=true;
@@ -23,11 +27,16 @@ bool wordSearch(vector<vector<char>> &board, string word){
     bool flag = false;
     for(int i=0; i<board.size(); i++ ){
         for(int j=0; j<board[0].size(); j++){
-            if(board[i][j] = word[0]){
+            if(board[i][j] == word[0]){
                 recur(board,word,i,j,0,flag);
             }
-            if(flag==true) return flag;
+            if(flag ) return flag;
         }
     }
     return flag;
+}
+
+int main(){
+    
+    return 0;
 }
